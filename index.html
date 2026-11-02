@@ -452,6 +452,13 @@ h2 .dim { display: block; }
 .facts strong { margin: 0; font-size: clamp(30px, 5vw, 42px); line-height: 1; white-space: nowrap; letter-spacing: -0.02em; }
 .facts span { font-size: 15px; line-height: 1.4; }
 @media (max-width: 640px) { .facts div { padding: 16px 0; grid-template-columns: 108px 1fr; } .facts strong { font-size: 30px; } }
+
+/* facts: tiles (back to blocks, equal height) */
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border: 0; border-top: 0; background: none; }
+.facts div { display: flex; flex-direction: column; justify-content: space-between; gap: 18px; min-height: 132px; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+.facts strong { font-size: clamp(34px, 5vw, 46px); line-height: 1; letter-spacing: -0.02em; }
+.facts span { font-size: 14px; line-height: 1.35; max-width: 22ch; }
+@media (max-width: 640px) { .facts { gap: 10px; } .facts div { min-height: 116px; padding: 16px; grid-template-columns: none; } .facts strong { font-size: 32px; } }
 </style>
 
 </head>
@@ -537,10 +544,10 @@ h2 .dim { display: block; }
         </div>
       </div>
       <div class="facts">
-        <div><strong>18</strong><span>гостей у трьох<br>окремих котеджах</span></div>
-        <div><strong>2</strong><span>спальні<br>в будинку</span></div>
-        <div><strong>6 міс.</strong><span>басейн з підігрівом,<br>з травня до жовтня</span></div>
-        <div><strong>4.9</strong><span>оцінка гостей на HutsHub,<br>13 відгуків</span></div>
+        <div><strong>18</strong><span>гостей у трьох котеджах</span></div>
+        <div><strong>2</strong><span>спальні в кожному будинку</span></div>
+        <div><strong>6 міс.</strong><span>відкритий басейн, травень–жовтень</span></div>
+        <div><strong>4.9</strong><span>оцінка гостей на HutsHub, 13 відгуків</span></div>
       </div>
     </div>
   </section>
